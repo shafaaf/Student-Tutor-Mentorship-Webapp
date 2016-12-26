@@ -1,6 +1,6 @@
 Project
 =======
-
+Technologies included Node.js, MongoDB, Express, PostgreSQL.
 Live Site
 ---------
 
