@@ -1,0 +1,43 @@
+As I am telling most people, I think your project is a bit too ambitious, but at
+the same time you have done a pretty good job of narrowing down what your idea
+is.
+
+I think that the stuff you left in "additional features" is definitely
+appropriate to leave there. However, there is quite a bit lingering behind a few
+of the main parts of your app that I wanted to make sure you were aware of. But
+before I do that a few notes on the proposal as a whole.
+
+You have listed your features for each role well, but some of the connecting
+bits could be expanded on. I can infer some things from the UI mockups, so this
+is mostly to give you all a sense of what lurks under the surface, but how does
+someone create a new chat with people? How do you manage members of the chat?
+What do these views look like? Can members of a chat add anyone? How do you find
+people to add to a chat to make it a group chat?
+
+One big thing that is missing is more details on how users search for a tutor.
+You have a search box in the student main page sketch, and suggested tutors, but
+how do they manage these? It looks like you are searching on a subject, but are
+you doing other kinds of search too? There is a lot that I think you all are
+implicitly lumping under the "etc." in your description of personal information
+that I would really watch out for. What does it look like to view a tutor's page
+from a student's account? What actions can they do on a tutor's page?
+
+The other big thing which I expect will take more time than you are expecting is
+the calendar and notifications function. Doing a nice looking calendar isn't
+trivial, and given it's importance in your design right now and lack of details
+for the UI and architecture, I would recommend putting some serious thought into
+fleshing it out more. Notifications on top of a bunch of calendar events hide
+even more complexity, like perhaps settings for how long before an event you see
+a notification for, how notifications get dismissed (or not), and more. This
+isn't to say that all of these things are necessary, but watch out for scope
+creep.
+
+In summary, I would really recommend figuring out what the minimum viable set of
+features you can have is, and get a really good sense of what exactly you are
+trying to do for the ones you decide to keep. Think about database, routes, UI,
+all of that stuff. This isn't to advocate for a ridiculous waterfall approach,
+but make sure you have a good idea of what you are getting into. This will go a
+long way towards not having a late realization of exactly how big your scope is,
+and will help you plan things out.
+
+Mark: 7/10

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <style>
+    label {
+    display: inline-block;
+    width: 150px;
+    text-align: left;
+    }​
+  </style>
+  <title>Edit Profile</title>
+</head>
+
+<div class="container">
+  <div class="row">
+    <h1>Edit Profile</h1>
+  </div>
+  <div class="row">
+    <div class="col-md-6">
+      <h3>Personal Details</h3>
+      <form id="profile-form" onsubmit="return false">
+        <div class="row">
+          <label>First Name</label>
+          <input placeholder="First Name" id="first_name" name="first_name" type="text">
+        </div>
+        <div class="row">
+          <label>Last Name</label>
+          <input placeholder="Last Name" id="last_name" name="last_name" type="text">
+        </div>
+        <div class="row">
+          <label>Role</label>
+          <input type="radio" name="role" value="student"> Student
+          <input type="radio" name="role" value="tutor"> Tutor
+        </div>
+        <div class="row">
+          <label>Subject</label>
+          <input placeholder="Subject" id="subject" name="subject" type="text">
+        </div>
+        <div class="row">
+          <button onclick="return clickSubmit()">Submit</button>
+        </div>
+      </form>
+    </div>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script>
+  function clickSubmit() {
+    var firstName = ($('#profile-form').find('input[name=first_name]')).val();
+    var lastName = ($('#profile-form').find('input[name=last_name]')).val();
+    var subject = ($('#profile-form').find('input[name=subject]')).val();
+    var role = ($('#profile-form').find('input[name=role]:checked')).val();
+
+    if (firstName === "" || lastName === "" || subject === "" || role === "") {
+      alert("Please fill out the form!");
+    }
+    else{
+      $.ajax({
+        url: '\/editprofile',
+        method: 'POST',
+        data: {firstName, lastName, subject, role}
+      }).done(function() {
+        alert("Success");
+        window.location.replace("http://csc309-coursescheduler.rhcloud.com/dashboard");
+      }).fail(function() {
+        alert("Failed");
+      });
+    }
+  }
+</script>
+</html>

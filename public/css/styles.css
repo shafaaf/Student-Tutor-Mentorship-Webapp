@@ -1,0 +1,120 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/* ~~ Top top-navigation Bar ~~ */
+
+#top-navigation-container {
+  width: 1200px;
+  margin: 0;
+  height: 70px;
+}
+
+.top-navigation-bar {
+  background-color: #0000FF; /*blue*/
+  height: 70px;
+  width: 100%;
+
+  /*Align menu to the centre*/
+  text-align:center;
+}
+.top-navigation-bar img{
+  float:left;
+  height: 70px;
+  width: 120px;
+  margin-right: 85px;
+  clear:both;
+}
+.top-navigation-bar ul[class="left"] {
+  float: left;
+  padding: 0px;
+  margin: 0px;
+  text-align: center;
+  display:inline-block;
+  vertical-align:top;
+}
+.top-navigation-bar ul[class="right"] {
+  float:right;
+  color: white;
+  margin: 0px;
+  padding: 0px;
+  font-size: 16px;
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  text-decoration: none;
+  line-height: 70px;
+  text-align: center;
+  display:inline-block;
+  vertical-align:top;
+}
+.top-navigation-bar li {
+  list-style-type: none;
+  padding: 0px;
+  height: 24px;
+  margin-top: 4px;
+  margin-bottom: 4px;
+  display: inline;
+}
+
+.top-navigation-bar li a {
+  color: white;
+  font-size: 16px;
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  text-decoration: none;
+  line-height: 70px;
+  padding: 26px 26px;
+}
+
+.side-navigation-bar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 15%;
+  background-color: #0000FF; /*blue*/
+  position: fixed;
+  height: 100%;
+  overflow: auto;
+}
+
+.side-navigation-bar li a {
+  display: block;
+  color: white;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+
+[class*="-navigation-bar"] li a:hover:not(.active) {
+  background-color: #111; /*black*/
+}
+
+li a:hover {
+    cursor: pointer;
+    cursor: hand;
+}
+
+.active {
+  background-color: #4CAF50; /*green*/
+}
+
+#menu {
+  float: right;
+}
+
+/*CSS for Search*/
+
+#imaginary_container{
+    margin-top:10px;
+    float:right;
+}
+.stylish-input-group .input-group-addon{
+    background: white !important; 
+}
+.stylish-input-group .form-control{
+    border-right:0; 
+    box-shadow:0 0 0; 
+    border-color:#ccc;
+}
+.stylish-input-group button{
+    border:0;
+    background:transparent;
+}

@@ -1,0 +1,56 @@
+Project Marking Scheme  (20%)
+
+Readme file (10%)
+: 4 / 4
+    - Design description is clear and helpful
+    - Instructions on how to connect to app, or install and run are provided
+    - Description of anything not complete or not working
+    - Description of any enhancements
+    - Reasonably well-written
+
+Required features  (40%)
+: 16 / 16
+    - Graders will use some discretion about required features, remembering that the focus of the course is on web programming skills (JavaScript, AJAX, DOM manipulation, Data management)
+    - user profiles, authentication
+    - reasonable data set
+    - admin functionality
+    - sufficient user interaction
+    - search (depends on application)
+    - several different views
+    
+Architecture (15%)
+: 3 / 6
+    - follows a standard architecture  
+    - code is well-organized, readable, and documented
+    - interface to front end (RESTful API?) is clear
+    
+Database (approximately 7%)
+: 3 / 3
+    - Data is managed well
+    - Interface to database is clear
+
+User interface/Front end (10%)
+: 3 / 4
+    - A plain look and feel is fine
+    - Emphasis here is on organization of UI, DOM manipulation, use of forms.
+
+Hosting/Deployment(approximately 3%)
+: 1 / 1
+	- Hosted for easy use by graders
+	- If not hosted, instructions for the graders on how to set up and run 
+are clear an easy to follow
+
+
+- Creativity/Additional features(15%)
+: 3 / 6
+    - As discussed in class and on the bulletin boards this category is broad ranging.
+    - Possible additional features include:
+        - good testing
+        - responsive UI
+        - significant UI 
+        - interesting back end algorthms
+		- preventative security measures
+        - anything that particularly impresses the graders (remembering that students new to web programming this term can also do impressive work)
+        
+Total:
+: 33 / 40

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Home</title>
+        <link rel="stylesheet" href="css/homeStyle.css" >
+				<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js" defer ></script>
+        <script type="text/javascript" src="js/homeScript.js" defer ></script>
+    </head>
+		<body>
+		<div class="login-box">
+			<div class="lb-header">
+				<a href="#" class="active" id="login-box-link">Login</a>
+				<a href="#" id="signup-box-link">Sign Up</a>
+			</div>
+			<div class="social-login">
+				<a onclick="clickGithub()">
+				<i class="fa fa-github fa-lg"></i>
+					Log in with Github
+				</a>
+				<a onclick="clickGoogle()">
+				<i class="fa fa-google-plus fa-lg"></i>
+					log in with Google
+				</a>
+			</div>
+			<form onsubmit="return false" class="email-login">
+				<div class="u-form-group">
+					<input type="email" placeholder="Email"/>
+				</div>
+				<div class="u-form-group">
+					<input type="password" placeholder="Password"/>
+				</div>
+				<div class="u-form-group">
+					<button onclick="clickLogIn()">Log in</button>
+				</div>
+			</form>
+			<form class="email-signup">
+				<div class="u-form-group">
+					<input type="email" placeholder="Email"/>
+				</div>
+				<div class="u-form-group">
+					<input type="password" placeholder="Password"/>
+				</div>
+				<div class="u-form-group">
+					<input type="password" placeholder="Confirm Password"/>
+				</div>
+				<div class="u-form-group">
+					<button onclick="clickSignUp()">Sign Up</button>
+				</div>
+			</form>
+		</div>
+	</body>
+</html>
+

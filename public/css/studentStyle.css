@@ -1,0 +1,156 @@
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+.individual-tutor {
+  margin: 5%;
+}
+
+/* ~~ Top top-navigation Bar ~~ */
+
+#top-navigation-container {
+  width: 99%;
+  height: 70px;
+}
+
+.top-navigation-bar {
+  background-color: #0C4A60; /*blue*/
+  height: 10%;
+  width: 100%;
+
+  /*Align menu to the centre*/
+  text-align:center;
+}
+.top-navigation-bar img{
+  float:left;
+  height: 100%;
+  width: 8%;
+  margin-right: 6.1%;
+  clear:both;
+}
+.top-navigation-bar ul[class="left"] {
+  float: left;
+  padding: 0px;
+  margin: 0px;
+  text-align: center;
+  display:inline-block;
+  vertical-align:top;
+}
+.top-navigation-bar ul[class="right"] {
+  float:right;
+  color: white;
+  margin: 0px;
+  padding: 0px;
+  font-size: 16px;
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  text-decoration: none;
+  line-height: 70px;
+  text-align: center;
+  display:inline-block;
+  vertical-align:top;
+}
+.top-navigation-bar li {
+  list-style-type: none;
+  padding: 0px;
+  height: 100%;
+  margin-top: 1%;
+  margin-bottom: 4px;
+  display: inline;
+}
+
+.top-navigation-bar li a {
+  color: white;
+  font-size: medium;
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  text-decoration: none;
+  line-height: 437%;
+  padding: 26px 26px;
+}
+
+.side-navigation-bar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  padding-top: 70px;
+  width: 14%;
+  background-color: #0C4A60; /*blue*/
+  position: fixed;
+  height: 100%;
+  top: 0;
+  bottom: 0;
+  overflow: auto;
+  z-index: -1;
+}
+
+.side-navigation-bar li a {
+  display: block;
+  color: white;
+  padding: 8px 16px;
+  text-decoration: none;
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  font-size: medium;
+}
+
+[class*="-navigation-bar"] li a:hover:not(.active) {
+  background-color: #111; /*black*/
+}
+
+li a:hover {
+    cursor: pointer;
+    cursor: hand;
+}
+
+.active {
+  background-color: #EF6C33; /*green*/
+}
+
+#menu {
+  float: right;
+}
+
+.middle {
+  float: right;
+  padding: 0px;
+  margin: 0px;
+  width: 85%;
+  height: 100%;
+  vertical-align:top;
+}
+
+/*CSS for Search*/
+
+#imaginary_container{
+    margin-top:10px;
+    float:right;
+}
+.stylish-input-group .input-group-addon{
+    background: white !important;
+}
+.stylish-input-group .form-control{
+    border-right:0;
+    box-shadow:0 0 0;
+    border-color:#ccc;
+}
+.stylish-input-group button{
+    border:0;
+    background:transparent;
+}
+
+#calendar {
+  padding:20px;
+}
+
+.event {
+  color: blue;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+label {
+  display: inline-block;
+  width: 150px;
+  text-align: left;
+
+}​
